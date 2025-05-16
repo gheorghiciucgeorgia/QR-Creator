@@ -11,9 +11,13 @@
 
 ## 📂 Project Structure
 qr-creator/
+
 ├── index.html # Main HTML structure
+
 ├── style.css # Tailwind-based custom styles
+
 ├── script.js # Logic to generate and manage QR codes
+
 ├── preview.png # Screenshot (for README or project preview)
 
 
