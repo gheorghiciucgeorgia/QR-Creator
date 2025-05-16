@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#1c1e26] max-w-[500px] h-[100vh] flex items-center justify-center text-white mx-auto">
+<body class="bg-[#393E46] max-w-[500px] h-[100vh] flex items-center justify-center text-white mx-auto">
 
     <section>
         <div class="flex items-center justify-between">
             <input type="color" class="light border-none w-[32.5%] h-[40px] rounded-[3px]" value="#ffffff">
             <input type="color" class="dark border-none w-[32.5%] h-[40px] rounded-[3px]">
-            <select class="w-[32.5%] h-10 text-white bg-[#181b29] border border-[#414866] rounded outline-none p-2">
+            <select class="sizes w-[32.5%] h-10 text-white bg-[#222831] border border-[#222831] rounded outline-none p-2">
                 <option value="100">100x100</option>
                 <option value="200">200x200</option>
                 <option value="300">300x300</option>
@@ -32,10 +32,10 @@
             </select>
         </div>
         <input type="text"
-            class="qr-text p-[1rem] block bg-[#181b29] border-solid p-4 border-[#414866] w-full my-2 text-white outline-none placeholder:text[#8b92b7] placeholder:font-medium"
+            class="qr-text p-[1rem] block bg-[#393E46] border-solid p-4 border-[#414866] w-full my-2 text-white outline-none placeholder:text[#8b92b7] placeholder:font-medium"
             placeholder="Enter text or URL">
-        <div id="qr-code" class="w-[500px] h-[500px] flex items-center justify-center border border-[#414866]"></div>
-        <div class="action-container flex my-[1rem]">
+        <div id="qr-code" class="w-[500px] h-[500px] flex items-center justify-center border border-[#222831]"></div>
+        <div class="action-container flex my-[1rem] items-center justify-between">
             <a href="#"
                 class="download btn decoration-none text-white max-w-[200px] p-[14px] bg-[rgb(106, 43, 255)] rounded-[4px] border-none flex items-center justify-center cursor-pointer text-[1.1rem] font-medium flex-1 ml-[0.7rem]"
                 download="QRCode">
