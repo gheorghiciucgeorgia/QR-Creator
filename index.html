@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Creator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#1c1e26] max-w-[500px] h-[100vh] flex items-center justify-center text-white mx-auto">
+
+    <section>
+        <div class="flex items-center justify-between">
+            <input type="color" class="light border-none w-[32.5%] h-[40px] rounded-[3px]" value="#ffffff">
+            <input type="color" class="dark border-none w-[32.5%] h-[40px] rounded-[3px]">
+            <select class="w-[32.5%] h-10 text-white bg-[#181b29] border border-[#414866] rounded outline-none p-2">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300">300x300</option>
+                <option selected value="400">400x400</option>
+                <option value="500">500x500</option>
+                <option value="600">600x600</option>
+                <option value="700">700x700</option>
+                <option value="800">800x800</option>
+                <option value="900">900x900</option>
+                <option value="1000">1000x1000</option>
+            </select>
+        </div>
+        <input type="text"
+            class="qr-text p-[1rem] block bg-[#181b29] border-solid p-4 border-[#414866] w-full my-2 text-white outline-none placeholder:text[#8b92b7] placeholder:font-medium"
+            placeholder="Enter text or URL">
+        <div id="qr-code" class="w-[500px] h-[500px] flex items-center justify-center border border-[#414866]"></div>
+        <div class="action-container flex my-[1rem]">
+            <a href="#"
+                class="download btn decoration-none text-white max-w-[200px] p-[14px] bg-[rgb(106, 43, 255)] rounded-[4px] border-none flex items-center justify-center cursor-pointer text-[1.1rem] font-medium flex-1 ml-[0.7rem]"
+                download="QRCode">
+                <span>Download <i class="fa-solid fa-download"></i></span>
+            </a>
+            <button
+                class="btn share-btn text-white max-w-[200px] p-[14px] bg-[rgb(106, 43, 255)] rounded-[4px] border-none flex items-center justify-center cursor-pointer text-[1.1rem] font-medium flex-1 ml-[0.7rem]">
+                <span>Share <i class="fa-solid fa-share w-[20px] ml-[10px]"></i></span>
+            </button>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
