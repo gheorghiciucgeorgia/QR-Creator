@@ -1,6 +1,7 @@
 # QR Creator 🎯
 
-**QR Creator** is a sleek, responsive web application that allows users to generate customizable QR codes in real time. 
+**QR Creator** is a responsive web application that allows users to generate customizable QR codes in real time. 
+
 It supports live preview, custom colors, multiple sizes, and quick download/share functionality. 
 ---
 
